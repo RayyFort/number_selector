@@ -344,7 +344,7 @@ class _NumberSelectorState extends State<NumberSelector> {
       focusNode: _focusNode,
       decoration: InputDecoration(
         hintText: '$_current',
-        suffixText: showSuffix ? '${widget.prefixNaming} ${widget.max}' : null,
+        suffixText: showSuffix ? widget.prefixNaming : null,
         contentPadding: EdgeInsets.symmetric(horizontal: widget.contentPadding),
         border: InputBorder.none,
         enabledBorder: InputBorder.none,
